@@ -2,9 +2,44 @@
 <html>
   <head>
     <title>Echo() exercise</title>
-    <script src="echo.js"></script>
+
   </head>
   <body>
-    See console.
+    
+    
+    <p id="demo">  try </p>
+
+    
+
+
+
+<script>
+
+function echo(args)
+{
+  
+  var i;
+  var args = 0;
+
+  for(i = 0; i<arguments.length; i++){
+    args += arguments[i] + "<br>";
+    console.log(args);
+  }
+  
+  var result = document.getElementById("demo");
+  result.innerHTML = args;
+
+}
+
+//echo('timing','two');
+echo('foo','bar','raa','taa');
+
+</script>
+
+
   </body>
 </html>
+
+
+
+
